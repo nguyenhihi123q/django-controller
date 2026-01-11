@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>Phan 3 - Cau 1: Cu phap if-else</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Trong C++, cấu trúc nào dùng để thực hiện một khối lệnh khi điều kiện sai?</p>]]></text></questiontext>
+    <answer fraction="0"><text>if</text></answer>
+    <answer fraction="100"><text>else</text></answer>
+    <answer fraction="0"><text>then</text></answer>
+    <answer fraction="0"><text>switch</text></answer>
+    <tags><tag><text>if_else</text></tag><tag><text>conditionals</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 3 - Cau 2: Toan tu so sanh bang</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Toán tử nào dùng để so sánh xem hai giá trị có <b>bằng nhau</b> hay không?</p>]]></text></questiontext>
+    <answer fraction="0"><text>=</text></answer>
+    <answer fraction="100"><text>==</text></answer>
+    <answer fraction="0"><text>===</text></answer>
+    <answer fraction="0"><text>!=</text></answer>
+    <tags><tag><text>operators</text></tag><tag><text>logic</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 3 - Cau 3: Tu khoa break</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Trong cấu trúc <code>switch-case</code>, từ khóa nào dùng để ngăn chương trình tự động chạy xuống các case tiếp theo?</p>]]></text></questiontext>
+    <answer fraction="100"><text>break</text></answer>
+    <answer fraction="0"><text>stop</text></answer>
+    <answer fraction="0"><text>exit</text></answer>
+    <answer fraction="0"><text>default</text></answer>
+    <tags><tag><text>switch_case</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 3 - Cau 4: Toan tu AND</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Biểu thức <code>(5 > 3 && 2 < 1)</code> trả về giá trị nào?</p>]]></text></questiontext>
+    <answer fraction="0"><text>true</text></answer>
+    <answer fraction="100"><text>false</text></answer>
+    <answer fraction="0"><text>1</text></answer>
+    <answer fraction="0"><text>Lỗi cú pháp</text></answer>
+    <tags><tag><text>logical_operators</text></tag><tag><text>logic</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 3 - Cau 5: Mac dinh switch</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Trong <code>switch</code>, phần nào sẽ được thực hiện nếu không có <code>case</code> nào khớp với giá trị của biến?</p>]]></text></questiontext>
+    <answer fraction="0"><text>else</text></answer>
+    <answer fraction="100"><text>default</text></answer>
+    <answer fraction="0"><text>break</text></answer>
+    <answer fraction="0"><text>catch</text></answer>
+    <tags><tag><text>switch_case</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 3 - Cau 6: If long nhau</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Cấu trúc một lệnh <code>if</code> nằm bên trong một lệnh <code>if</code> khác được gọi là gì?</p>]]></text></questiontext>
+    <answer fraction="100"><text>Nested if (if lồng nhau)</text></answer>
+    <answer fraction="0"><text>Double if</text></answer>
+    <answer fraction="0"><text>Multi if</text></answer>
+    <answer fraction="0"><text>Loop if</text></answer>
+    <tags><tag><text>if_else</text></tag><tag><text>logic</text></tag></tags>
+  </question>
+</quiz>

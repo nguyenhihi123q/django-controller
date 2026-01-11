@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>Phan 8 - Cau 1: Thu vien string</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Để sử dụng kiểu dữ liệu <code>std::string</code> trong C++, bạn cần khai báo thư viện nào?</p>]]></text></questiontext>
+    <answer fraction="0"><text><![CDATA[iostream]]></text></answer>
+    <answer fraction="100"><text><![CDATA[string]]></text></answer>
+    <answer fraction="0"><text><![CDATA[cstring]]></text></answer>
+    <answer fraction="0"><text><![CDATA[stdio.h]]></text></answer>
+    <tags><tag><text>strings</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 8 - Cau 2: Nhap chuoi getline</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Hàm nào sau đây dùng để nhập một chuỗi ký tự <b>bao gồm cả khoảng trắng</b> từ bàn phím?</p>]]></text></questiontext>
+    <answer fraction="0"><text><![CDATA[cin >> s;]]></text></answer>
+    <answer fraction="100"><text><![CDATA[getline(cin, s);]]></text></answer>
+    <answer fraction="0"><text><![CDATA[gets(s);]]></text></answer>
+    <answer fraction="0"><text><![CDATA[scanf("%s", &s);]]></text></answer>
+    <tags><tag><text>strings</text></tag><tag><text>input_output</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 8 - Cau 3: Do dai chuoi</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Lệnh nào dùng để lấy số lượng ký tự có trong chuỗi <code>s</code>?</p>]]></text></questiontext>
+    <answer fraction="100"><text><![CDATA[s.length()]]></text></answer>
+    <answer fraction="0"><text><![CDATA[s.width()]]></text></answer>
+    <answer fraction="0"><text><![CDATA[s.count()]]></text></answer>
+    <answer fraction="0"><text><![CDATA[s.sizeof()]]></text></answer>
+    <tags><tag><text>strings</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 8 - Cau 4: Truy cap ky tu</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Tương tự mảng, ký tự thứ 3 của chuỗi <code>s</code> được truy cập bằng cú pháp nào?</p>]]></text></questiontext>
+    <answer fraction="0"><text><![CDATA[s[3]]]></text></answer>
+    <answer fraction="100"><text><![CDATA[s[2]]]></text></answer>
+    <answer fraction="0"><text><![CDATA[s(2)]]></text></answer>
+    <answer fraction="0"><text><![CDATA[s.at(3)]]></text></answer>
+    <tags><tag><text>strings</text></tag><tag><text>indexing</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 8 - Cau 5: Noi chuoi</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Trong C++, toán tử nào dùng để nối hai đối tượng <code>std::string</code> lại với nhau?</p>]]></text></questiontext>
+    <answer fraction="100"><text><![CDATA[+]]></text></answer>
+    <answer fraction="0"><text><![CDATA[&]]></text></answer>
+    <answer fraction="0"><text><![CDATA[*]]></text></answer>
+    <answer fraction="0"><text><![CDATA[concat()]]></text></answer>
+    <tags><tag><text>strings</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 8 - Cau 6: Cat chuoi con</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Hàm <code>s.substr(1, 3)</code> sẽ làm gì?</p>]]></text></questiontext>
+    <answer fraction="100"><text><![CDATA[Trích xuất 3 ký tự bắt đầu từ vị trí chỉ số 1]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Xóa 3 ký tự đầu tiên]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Tìm vị trí của số 1 và 3]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Cắt chuỗi từ vị trí 1 đến hết]]></text></answer>
+    <tags><tag><text>strings</text></tag></tags>
+  </question>
+</quiz>

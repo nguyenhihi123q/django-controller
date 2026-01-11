@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>Phan 5 - Cau 1: Chi so dau tien</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Trong C++, chỉ số (index) của phần tử đầu tiên trong một mảng luôn luôn là bao nhiêu?</p>]]></text></questiontext>
+    <answer fraction="100"><text>0</text></answer>
+    <answer fraction="0"><text>1</text></answer>
+    <answer fraction="0"><text>-1</text></answer>
+    <answer fraction="0"><text>Tùy vào cách khai báo</text></answer>
+    <tags><tag><text>arrays</text></tag><tag><text>indexing</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 5 - Cau 2: Khai bao mang dung</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Cách khai báo mảng số nguyên nào sau đây là <b>đúng</b> cú pháp?</p>]]></text></questiontext>
+    <answer fraction="100"><text>int arr[10];</text></answer>
+    <answer fraction="0"><text>int arr(10);</text></answer>
+    <answer fraction="0"><text>arr{10} int;</text></answer>
+    <answer fraction="0"><text>int arr[]; (không khởi tạo)</text></answer>
+    <tags><tag><text>arrays</text></tag><tag><text>syntax</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 5 - Cau 3: Phan tu cuoi cung</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Nếu mảng được khai báo là <code>float b[5];</code>, phần tử cuối cùng của mảng là:</p>]]></text></questiontext>
+    <answer fraction="0"><text>b[5]</text></answer>
+    <answer fraction="100"><text>b[4]</text></answer>
+    <answer fraction="0"><text>b[0]</text></answer>
+    <answer fraction="0"><text>b[6]</text></answer>
+    <tags><tag><text>arrays</text></tag><tag><text>indexing</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 5 - Cau 4: Truy cap mang 2 chieu</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Để truy cập phần tử ở hàng 2, cột 3 của mảng 2 chiều <code>int matrix[5][5];</code>, ta dùng cú pháp:</p>]]></text></questiontext>
+    <answer fraction="0"><text>matrix[2,3]</text></answer>
+    <answer fraction="100"><text>matrix[1][2]</text></answer>
+    <answer fraction="0"><text>matrix[2][3]</text></answer>
+    <answer fraction="0"><text>matrix{2}{3}</text></answer>
+    <tags><tag><text>2d_array</text></tag><tag><text>syntax</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 5 - Cau 5: Loi out of bounds</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Việc truy cập vào <code>a[10]</code> của một mảng <code>int a[10];</code> sẽ dẫn đến kết quả gì?</p>]]></text></questiontext>
+    <answer fraction="100"><text>Lỗi truy cập vùng nhớ không xác định (Out of bounds)</text></answer>
+    <answer fraction="0"><text>Lấy được giá trị cuối cùng</text></answer>
+    <answer fraction="0"><text>Giá trị mặc định là 0</text></answer>
+    <answer fraction="0"><text>Chương trình vẫn chạy đúng 100%</text></answer>
+    <tags><tag><text>arrays</text></tag><tag><text>logic_error</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 5 - Cau 6: Mang va Vong lap</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Vòng lặp nào thường được dùng phổ biến nhất để duyệt qua các phần tử của mảng?</p>]]></text></questiontext>
+    <answer fraction="100"><text>vòng lặp for</text></answer>
+    <answer fraction="0"><text>vòng lặp do-while</text></answer>
+    <answer fraction="0"><text>cấu trúc switch-case</text></answer>
+    <answer fraction="0"><text>vòng lặp while</text></answer>
+    <tags><tag><text>arrays</text></tag><tag><text>loops</text></tag></tags>
+  </question>
+</quiz>

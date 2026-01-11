@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>Phan 4 - Cau 1: Cau truc for</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Trong vòng lặp <code>for (int i = 0; i < 10; i++)</code>, biến <b>i++</b> đóng vai trò gì?</p>]]></text></questiontext>
+    <answer fraction="0"><text>Khởi tạo biến</text></answer>
+    <answer fraction="0"><text>Điều kiện dừng</text></answer>
+    <answer fraction="100"><text>Bước nhảy (cập nhật biến)</text></answer>
+    <answer fraction="0"><text>Thân vòng lặp</text></answer>
+    <tags><tag><text>loops</text></tag><tag><text>for_loop</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 4 - Cau 2: Do-while dac diem</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Vòng lặp nào sau đây luôn thực hiện khối lệnh <b>ít nhất một lần</b> kể cả khi điều kiện sai ngay từ đầu?</p>]]></text></questiontext>
+    <answer fraction="0"><text>for</text></answer>
+    <answer fraction="0"><text>while</text></answer>
+    <answer fraction="100"><text>do-while</text></answer>
+    <answer fraction="0"><text>if-else</text></answer>
+    <tags><tag><text>loops</text></tag><tag><text>do_while</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 4 - Cau 3: Lenh break</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Lệnh nào dùng để thoát khỏi vòng lặp ngay lập tức dù điều kiện lặp vẫn còn đúng?</p>]]></text></questiontext>
+    <answer fraction="100"><text>break</text></answer>
+    <answer fraction="0"><text>continue</text></answer>
+    <answer fraction="0"><text>return</text></answer>
+    <answer fraction="0"><text>exit</text></answer>
+    <tags><tag><text>loops</text></tag><tag><text>control_flow</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 4 - Cau 4: Lenh continue</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Trong vòng lặp, lệnh <code>continue</code> có tác dụng gì?</p>]]></text></questiontext>
+    <answer fraction="0"><text>Dừng vòng lặp vĩnh viễn</text></answer>
+    <answer fraction="100"><text>Bỏ qua các lệnh còn lại của lần lặp hiện tại và sang lần lặp mới</text></answer>
+    <answer fraction="0"><text>Kết thúc chương trình</text></answer>
+    <answer fraction="0"><text>Quay lại bước khởi tạo</text></answer>
+    <tags><tag><text>loops</text></tag><tag><text>control_flow</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 4 - Cau 5: Vong lap vo tan</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Lỗi nào thường dẫn đến một vòng lặp vô tận (infinite loop)?</p>]]></text></questiontext>
+    <answer fraction="100"><text>Điều kiện dừng không bao giờ sai</text></answer>
+    <answer fraction="0"><text>Sử dụng sai kiểu dữ liệu</text></answer>
+    <answer fraction="0"><text>Thiếu thư viện iostream</text></answer>
+    <answer fraction="0"><text>Sử dụng lệnh break</text></answer>
+    <tags><tag><text>loops</text></tag><tag><text>logic_error</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 4 - Cau 6: Logic while</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Vòng lặp <code>while (condition)</code> sẽ thực hiện khi nào?</p>]]></text></questiontext>
+    <answer fraction="100"><text>Khi condition có giá trị true (khác 0)</text></answer>
+    <answer fraction="0"><text>Khi condition có giá trị false (bằng 0)</text></answer>
+    <answer fraction="0"><text>Chỉ khi condition bằng 1</text></answer>
+    <answer fraction="0"><text>Luôn luôn thực hiện</text></answer>
+    <tags><tag><text>loops</text></tag><tag><text>while_loop</text></tag></tags>
+  </question>
+</quiz>

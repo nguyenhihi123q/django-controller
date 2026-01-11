@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>C01_Operators</text></name>
+    <questiontext format="html"><text><![CDATA[Trong C++, giá trị của biểu thức 5 / 2 là bao nhiêu?]]></text></questiontext>
+    <answer fraction="100"><text>2</text></answer>
+    <answer fraction="0"><text>2.5</text></answer>
+    <answer fraction="0"><text>3</text></answer>
+    <tag><text>operators</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C02_IO_Stream</text></name>
+    <questiontext format="html"><text><![CDATA[Ký hiệu nào sau đây được dùng với "cin" để nhập dữ liệu từ bàn phím?]]></text></questiontext>
+    <answer fraction="100"><text>&gt;&gt;</text></answer>
+    <answer fraction="0"><text>&lt;&lt;</text></answer>
+    <tag><text>io_stream</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C03_Logic</text></name>
+    <questiontext format="html"><text><![CDATA[Kết quả của biểu thức !(5 > 3 || 2 < 1) là?]]></text></questiontext>
+    <answer fraction="100"><text>false (0)</text></answer>
+    <answer fraction="0"><text>true (1)</text></answer>
+    <tag><text>logic</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C04_Loops_Basic</text></name>
+    <questiontext format="html"><text><![CDATA[Vòng lặp nào luôn thực hiện khối lệnh ít nhất một lần trước khi kiểm tra điều kiện?]]></text></questiontext>
+    <answer fraction="100"><text>do...while</text></answer>
+    <answer fraction="0"><text>while</text></answer>
+    <answer fraction="0"><text>for</text></answer>
+    <tag><text>loops</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C05_Control_Flow</text></name>
+    <questiontext format="html"><text><![CDATA[Lệnh nào dùng để thoát ra khỏi vòng lặp ngay lập tức?]]></text></questiontext>
+    <answer fraction="100"><text>break</text></answer>
+    <answer fraction="0"><text>continue</text></answer>
+    <answer fraction="0"><text>return</text></answer>
+    <tag><text>control_flow</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C06_Arrays_Index</text></name>
+    <questiontext format="html"><text><![CDATA[Mảng int a[10]; có chỉ số (index) của phần tử cuối cùng là bao nhiêu?]]></text></questiontext>
+    <answer fraction="100"><text>9</text></answer>
+    <answer fraction="0"><text>10</text></answer>
+    <answer fraction="0"><text>0</text></answer>
+    <tag><text>arrays</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C07_Pointers_Addr</text></name>
+    <questiontext format="html"><text><![CDATA[Ký hiệu nào dùng để lấy địa chỉ của một biến trong bộ nhớ?]]></text></questiontext>
+    <answer fraction="100"><text>&amp;</text></answer>
+    <answer fraction="0"><text>*</text></answer>
+    <answer fraction="0"><text>-&gt;</text></answer>
+    <tag><text>pointers</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C08_Pointers_Val</text></name>
+    <questiontext format="html"><text><![CDATA[Nếu int *p = &a; thì lệnh nào dùng để lấy giá trị của biến a thông qua p?]]></text></questiontext>
+    <answer fraction="100"><text>*p</text></answer>
+    <answer fraction="0"><text>&amp;p</text></answer>
+    <answer fraction="0"><text>p</text></answer>
+    <tag><text>pointers</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C09_Strings</text></name>
+    <questiontext format="html"><text><![CDATA[Ký tự nào dùng để đánh dấu kết thúc một chuỗi trong C++?]]></text></questiontext>
+    <answer fraction="100"><text>'\0'</text></answer>
+    <answer fraction="0"><text>'\n'</text></answer>
+    <answer fraction="0"><text>'EOF'</text></answer>
+    <tag><text>strings</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C10_Functions</text></name>
+    <questiontext format="html"><text><![CDATA[Để thay đổi giá trị của biến truyền vào hàm sau khi hàm kết thúc, ta dùng cách truyền nào?]]></text></questiontext>
+    <answer fraction="100"><text>Truyền tham chiếu (int &amp;n)</text></answer>
+    <answer fraction="0"><text>Truyền tham trị (int n)</text></answer>
+    <tag><text>functions</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C11_Structs</text></name>
+    <questiontext format="html"><text><![CDATA[Để truy cập thành viên "age" của một đối tượng struct "Student s;", ta dùng cú pháp nào?]]></text></questiontext>
+    <answer fraction="100"><text>s.age</text></answer>
+    <answer fraction="0"><text>s->age</text></answer>
+    <answer fraction="0"><text>s(age)</text></answer>
+    <tag><text>structs</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C12_Complexity</text></name>
+    <questiontext format="html"><text><![CDATA[Hai vòng lặp lồng nhau, mỗi vòng chạy 10 lần, thì tổng số lần thực hiện thân vòng lặp là?]]></text></questiontext>
+    <answer fraction="100"><text>100</text></answer>
+    <answer fraction="0"><text>20</text></answer>
+    <answer fraction="0"><text>10</text></answer>
+    <tag><text>logic</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C13_Consistency</text></name>
+    <questiontext format="html"><text><![CDATA[Cho "int a = 5; int b = a++;". Giá trị của b sau lệnh này là?]]></text></questiontext>
+    <answer fraction="100"><text>5</text></answer>
+    <answer fraction="0"><text>6</text></answer>
+    <tag><text>operators</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C14_Files</text></name>
+    <questiontext format="html"><text><![CDATA[Thư viện nào dùng để thực hiện đọc và ghi File trong C++?]]></text></questiontext>
+    <answer fraction="100"><text>fstream</text></answer>
+    <answer fraction="0"><text>iostream</text></answer>
+    <answer fraction="0"><text>conio.h</text></answer>
+    <tag><text>files</text></tag>
+  </question>
+
+  <question type="multichoice">
+    <name><text>C15_Arrays_Loops</text></name>
+    <questiontext format="html"><text><![CDATA[Lệnh "int a[5] = {0};" sẽ khởi tạo các phần tử trong mảng như thế nào?]]></text></questiontext>
+    <answer fraction="100"><text>Tất cả 5 phần tử đều bằng 0</text></answer>
+    <answer fraction="0"><text>Chỉ phần tử đầu tiên bằng 0</text></answer>
+    <tag><text>arrays</text></tag>
+  </question>
+</quiz>

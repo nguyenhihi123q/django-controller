@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>Phan 2 - Cau 1: Kieu du lieu so thuc</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Để lưu trữ số Pi (3.14159) với độ chính xác cao, kiểu dữ liệu nào sau đây là tối ưu nhất?</p>]]></text></questiontext>
+    <answer fraction="0"><text>int</text></answer>
+    <answer fraction="0"><text>bool</text></answer>
+    <answer fraction="100"><text>double</text></answer>
+    <answer fraction="0"><text>char</text></answer>
+    <tags><tag><text>data_types</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 2 - Cau 2: Phep toan modulo</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Kết quả của phép toán <code>10 % 3</code> trong C++ là bao nhiêu?</p>]]></text></questiontext>
+    <answer fraction="0"><text>3</text></answer>
+    <answer fraction="100"><text>1</text></answer>
+    <answer fraction="0"><text>0</text></answer>
+    <answer fraction="0"><text>3.33</text></answer>
+    <tags><tag><text>operators</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 2 - Cau 3: Khai bao const</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Từ khóa nào được dùng để khai báo một biến mà giá trị của nó không thể thay đổi trong suốt chương trình?</p>]]></text></questiontext>
+    <answer fraction="100"><text>const</text></answer>
+    <answer fraction="0"><text>static</text></answer>
+    <answer fraction="0"><text>final</text></answer>
+    <answer fraction="0"><text>immutable</text></answer>
+    <tags><tag><text>constants</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 2 - Cau 4: Bo nho char</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Kiểu dữ liệu <code>char</code> thường chiếm bao nhiêu byte trong bộ nhớ?</p>]]></text></questiontext>
+    <answer fraction="100"><text>1 byte</text></answer>
+    <answer fraction="0"><text>2 bytes</text></answer>
+    <answer fraction="0"><text>4 bytes</text></answer>
+    <answer fraction="0"><text>8 bytes</text></answer>
+    <tags><tag><text>data_types</text></tag><tag><text>memory</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 2 - Cau 5: Comment don</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Ký hiệu nào dùng để tạo ghi chú trên một dòng duy nhất?</p>]]></text></questiontext>
+    <answer fraction="0"><text>/*</text></answer>
+    <answer fraction="100"><text>//</text></answer>
+    <answer fraction="0"><text>#</text></answer>
+    <answer fraction="0"><text>--</text></answer>
+    <tags><tag><text>cpp_comment</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 2 - Cau 6: Ep kieu</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Khi thực hiện phép chia <code>5 / 2</code> giữa hai số nguyên, kết quả nhận được là:</p>]]></text></questiontext>
+    <answer fraction="100"><text>2</text></answer>
+    <answer fraction="0"><text>2.5</text></answer>
+    <answer fraction="0"><text>3</text></answer>
+    <answer fraction="0"><text>Lỗi biên dịch</text></answer>
+    <tags><tag><text>operators</text></tag><tag><text>logic</text></tag></tags>
+  </question>
+</quiz>

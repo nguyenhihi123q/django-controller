@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+    <name><text>Phan 1 - Cau 1: Ky tu ket thuc cau lenh</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Trong C++, mọi câu lệnh đơn thường kết thúc bằng ký tự nào sau đây?</p>]]></text></questiontext>
+    <answer fraction="0"><text>:</text></answer>
+    <answer fraction="0"><text>.</text></answer>
+    <answer fraction="100"><text>;</text></answer>
+    <answer fraction="0"><text>,</text></answer>
+    <tags><tag><text>cpp_basic</text></tag><tag><text>syntax</text></tag></tags>
+  </question>
+
+<question type="multichoice">
+    <name><text>Phan 1 - Cau 2: Thu vien iostream</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Để sử dụng lệnh xuất dữ liệu (std::cout), bạn bắt buộc phải khai báo thư viện nào ở đầu chương trình?</p>]]></text></questiontext>
+    <answer fraction="0"><text>cmath</text></answer>
+    <answer fraction="100"><text>iostream</text></answer>
+    <answer fraction="0"><text>string</text></answer>
+    <answer fraction="0"><text>fstream</text></answer>
+    <tags><tag><text>io_stream</text></tag><tag><text>cpp_basic</text></tag></tags>
+  </question>
+
+<question type="multichoice">
+    <name><text>Phan 1 - Cau 3: Ghi chu nhieu dong</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Cú pháp nào sau đây được dùng để viết ghi chú (comment) trên <b>nhiều dòng</b>?</p>]]></text></questiontext>
+    <answer fraction="0"><text>// ...</text></answer>
+    <answer fraction="100"><text>/* ... */</text></answer>
+    <answer fraction="0"><text># ...</text></answer>
+    <answer fraction="0"><text>&lt;!-- ... --&gt;</text></answer>
+    <tags><tag><text>cpp_comment</text></tag></tags>
+  </question>
+
+<question type="multichoice">
+    <name><text>Phan 1 - Cau 4: Kieu du lieu char</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Kiểu dữ liệu nào sau đây dùng để lưu trữ một ký tự duy nhất (ví dụ: 'A', 'b') và tốn ít bộ nhớ nhất?</p>]]></text></questiontext>
+    <answer fraction="0"><text>int</text></answer>
+    <answer fraction="0"><text>double</text></answer>
+    <answer fraction="100"><text>char</text></answer>
+    <answer fraction="0"><text>string</text></answer>
+    <tags><tag><text>data_types</text></tag></tags>
+  </question>
+
+<question type="multichoice">
+    <name><text>Phan 1 - Cau 5: Logic hang so</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Nếu bạn khai báo <code>const int MAX = 100;</code>, hành động nào sau đây sẽ bị trình biên dịch báo lỗi?</p>]]></text></questiontext>
+    <answer fraction="0"><text>Sử dụng MAX trong phép tính</text></answer>
+    <answer fraction="100"><text>Gán giá trị mới: MAX = 200;</text></answer>
+    <answer fraction="0"><text>In giá trị MAX ra màn hình</text></answer>
+    <answer fraction="0"><text>Khai báo một biến khác bằng MAX</text></answer>
+    <tags><tag><text>constants</text></tag><tag><text>logic</text></tag></tags>
+  </question>
+
+<question type="multichoice">
+    <name><text>Phan 1 - Cau 6: Dat ten bien hop le</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Trong các tên biến sau, tên nào là <b>hợp lệ</b> theo quy tắc đặt tên của C++?</p>]]></text></questiontext>
+    <answer fraction="0"><text>2nd_value</text></answer>
+    <answer fraction="0"><text>first name</text></answer>
+    <answer fraction="100"><text>_totalValue</text></answer>
+    <answer fraction="0"><text>int</text></answer>
+    <tags><tag><text>variables</text></tag><tag><text>naming_convention</text></tag></tags>
+  </question>
+</quiz>

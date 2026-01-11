@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>Phan 7 - Cau 1: Dinh nghia con tro</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Biến con trỏ trong C++ dùng để lưu trữ loại giá trị nào?</p>]]></text></questiontext>
+    <answer fraction="0"><text>Giá trị số nguyên</text></answer>
+    <answer fraction="100"><text>Địa chỉ của một biến khác trong bộ nhớ</text></answer>
+    <answer fraction="0"><text>Một chuỗi ký tự</text></answer>
+    <answer fraction="0"><text>Giá trị đúng/sai (bool)</text></answer>
+    <tags><tag><text>pointers</text></tag><tag><text>memory</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 7 - Cau 2: Toan tu lay dia chi</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Toán tử nào dùng để lấy địa chỉ bộ nhớ của một biến?</p>]]></text></questiontext>
+    <answer fraction="100"><text>&amp; (ampersand)</text></answer>
+    <answer fraction="0"><text>*</text></answer>
+    <answer fraction="0"><text>%</text></answer>
+    <answer fraction="0"><text>#</text></answer>
+    <tags><tag><text>pointers</text></tag><tag><text>operators</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 7 - Cau 3: Khai bao con tro</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Cách khai báo một con trỏ kiểu số nguyên nào sau đây là <b>đúng</b>?</p>]]></text></questiontext>
+    <answer fraction="0"><text>int p*;</text></answer>
+    <answer fraction="100"><text>int *p;</text></answer>
+    <answer fraction="0"><text>pointer int p;</text></answer>
+    <answer fraction="0"><text>int &amp;p;</text></answer>
+    <tags><tag><text>pointers</text></tag><tag><text>syntax</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 7 - Cau 4: Giai tham chieu</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Nếu <code>p</code> là một con trỏ, biểu thức <code>*p</code> dùng để làm gì?</p>]]></text></questiontext>
+    <answer fraction="100"><text>Lấy giá trị của biến tại địa chỉ mà p đang trỏ tới</text></answer>
+    <answer fraction="0"><text>Lấy địa chỉ của p</text></answer>
+    <answer fraction="0"><text>Tăng giá trị địa chỉ của p</text></answer>
+    <answer fraction="0"><text>Xóa con trỏ p</text></answer>
+    <tags><tag><text>pointers</text></tag><tag><text>dereferencing</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 7 - Cau 5: Con tro NULL</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Tại sao nên gán giá trị <code>NULL</code> hoặc <code>nullptr</code> cho con trỏ khi mới khai báo mà chưa trỏ vào đâu?</p>]]></text></questiontext>
+    <answer fraction="100"><text>Để tránh con trỏ trỏ vào vùng nhớ rác gây lỗi hệ thống</text></answer>
+    <answer fraction="0"><text>Để tiết kiệm bộ nhớ RAM</text></answer>
+    <answer fraction="0"><text>Để chương trình chạy nhanh hơn</text></answer>
+    <answer fraction="0"><text>Bắt buộc phải làm vậy mới biên dịch được</text></answer>
+    <tags><tag><text>pointers</text></tag><tag><text>best_practice</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 7 - Cau 6: Kich thuoc con tro</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Kích thước của một biến con trỏ phụ thuộc vào yếu tố nào?</p>]]></text></questiontext>
+    <answer fraction="100"><text>Kiến trúc hệ điều hành (32-bit hoặc 64-bit)</text></answer>
+    <answer fraction="0"><text>Kiểu dữ liệu mà nó trỏ tới (int, char, double...)</text></answer>
+    <answer fraction="0"><text>Giá trị của biến mà nó trỏ tới</text></answer>
+    <answer fraction="0"><text>Tên của con trỏ</text></answer>
+    <tags><tag><text>pointers</text></tag><tag><text>memory</text></tag></tags>
+  </question>
+</quiz>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>Phan 6 - Cau 1: Muc dich cua ham</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Lợi ích lớn nhất của việc sử dụng hàm trong lập trình là gì?</p>]]></text></questiontext>
+    <answer fraction="100"><text>Tái sử dụng mã nguồn và dễ quản lý chương trình</text></answer>
+    <answer fraction="0"><text>Làm chương trình chạy chậm hơn</text></answer>
+    <answer fraction="0"><text>Tăng dung lượng file mã nguồn</text></answer>
+    <answer fraction="0"><text>Bắt buộc phải có để chạy được code</text></answer>
+    <tags><tag><text>functions</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 6 - Cau 2: Kieu void</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Khi một hàm không cần trả về bất kỳ giá trị nào cho nơi gọi nó, ta dùng kiểu dữ liệu nào làm kiểu trả về?</p>]]></text></questiontext>
+    <answer fraction="0"><text>int</text></answer>
+    <answer fraction="100"><text>void</text></answer>
+    <answer fraction="0"><text>null</text></answer>
+    <answer fraction="0"><text>none</text></answer>
+    <tags><tag><text>functions</text></tag><tag><text>data_types</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 6 - Cau 3: Lenh return</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Lệnh <code>return</code> trong một hàm có tác dụng gì?</p>]]></text></questiontext>
+    <answer fraction="100"><text>Kết thúc hàm và trả về một giá trị cho nơi gọi</text></answer>
+    <answer fraction="0"><text>Nhập dữ liệu từ bàn phím</text></answer>
+    <answer fraction="0"><text>In kết quả ra màn hình</text></answer>
+    <answer fraction="0"><text>Khai báo biến mới</text></answer>
+    <tags><tag><text>functions</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 6 - Cau 4: Bien cuc bo</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Biến được khai báo bên trong một hàm thì được gọi là gì?</p>]]></text></questiontext>
+    <answer fraction="0"><text>Biến toàn cục (Global variable)</text></answer>
+    <answer fraction="100"><text>Biến cục bộ (Local variable)</text></answer>
+    <answer fraction="0"><text>Hằng số (Constant)</text></answer>
+    <answer fraction="0"><text>Biến thành viên</text></answer>
+    <tags><tag><text>scope</text></tag><tag><text>variables</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 6 - Cau 5: Tham so ham</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Trong khai báo <code>int tinhTong(int a, int b)</code>, <b>a</b> và <b>b</b> được gọi là gì?</p>]]></text></questiontext>
+    <answer fraction="100"><text>Tham số (Parameters)</text></answer>
+    <answer fraction="0"><text>Giá trị trả về</text></answer>
+    <answer fraction="0"><text>Tên hàm</text></answer>
+    <answer fraction="0"><text>Thân hàm</text></answer>
+    <tags><tag><text>functions</text></tag><tag><text>parameters</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 6 - Cau 6: Loi goi ham</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Để thực hiện một hàm đã được định nghĩa, ta cần làm gì trong hàm <code>main()</code>?</p>]]></text></questiontext>
+    <answer fraction="100"><text>Gọi tên hàm kèm theo các đối số cần thiết</text></answer>
+    <answer fraction="0"><text>Khai báo lại hàm đó một lần nữa</text></answer>
+    <answer fraction="0"><text>Không cần làm gì cả</text></answer>
+    <answer fraction="0"><text>Xóa hàm main đi</text></answer>
+    <tags><tag><text>functions</text></tag></tags>
+  </question>
+</quiz>

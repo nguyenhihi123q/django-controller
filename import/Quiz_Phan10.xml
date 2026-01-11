@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>Phan 10 - Cau 1: Thu vien tap tin</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Thư viện nào trong C++ cung cấp các chức năng để làm việc với tệp tin (đọc/ghi)?</p>]]></text></questiontext>
+    <answer fraction="0"><text><![CDATA[iostream]]></text></answer>
+    <answer fraction="100"><text><![CDATA[fstream]]></text></answer>
+    <answer fraction="0"><text><![CDATA[stdio.h]]></text></answer>
+    <answer fraction="0"><text><![CDATA[conio.h]]></text></answer>
+    <tags><tag><text>file_handling</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 10 - Cau 2: Lop ghi file</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Lớp nào được sử dụng chuyên biệt để <b>ghi dữ liệu</b> từ chương trình vào tệp tin?</p>]]></text></questiontext>
+    <answer fraction="100"><text><![CDATA[ofstream]]></text></answer>
+    <answer fraction="0"><text><![CDATA[ifstream]]></text></answer>
+    <answer fraction="0"><text><![CDATA[iostream]]></text></answer>
+    <answer fraction="0"><text><![CDATA[string]]></text></answer>
+    <tags><tag><text>file_handling</text></tag><tag><text>output_stream</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 10 - Cau 3: Lop doc file</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Để <b>đọc dữ liệu</b> từ một tệp tin có sẵn vào chương trình, ta sử dụng lớp nào?</p>]]></text></questiontext>
+    <answer fraction="0"><text><![CDATA[ofstream]]></text></answer>
+    <answer fraction="100"><text><![CDATA[ifstream]]></text></answer>
+    <answer fraction="0"><text><![CDATA[cin]]></text></answer>
+    <answer fraction="0"><text><![CDATA[file_read]]></text></answer>
+    <tags><tag><text>file_handling</text></tag><tag><text>input_stream</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 10 - Cau 4: Dong file</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Sau khi hoàn thành thao tác với tệp tin, hàm nào cần được gọi để giải phóng tài nguyên?</p>]]></text></questiontext>
+    <answer fraction="100"><text><![CDATA[close()]]></text></answer>
+    <answer fraction="0"><text><![CDATA[exit()]]></text></answer>
+    <answer fraction="0"><text><![CDATA[stop()]]></text></answer>
+    <answer fraction="0"><text><![CDATA[delete()]]></text></answer>
+    <tags><tag><text>file_handling</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 10 - Cau 5: Ghi noi duoi</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Để ghi thêm dữ liệu vào cuối tệp mà <b>không làm mất dữ liệu cũ</b>, ta dùng chế độ nào?</p>]]></text></questiontext>
+    <answer fraction="0"><text><![CDATA[ios::out]]></text></answer>
+    <answer fraction="100"><text><![CDATA[ios::app]]></text></answer>
+    <answer fraction="0"><text><![CDATA[ios::in]]></text></answer>
+    <answer fraction="0"><text><![CDATA[ios::trunc]]></text></answer>
+    <tags><tag><text>file_handling</text></tag><tag><text>file_modes</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 10 - Cau 6: Kiem tra file</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Hàm nào dùng để kiểm tra xem việc mở tệp tin có thành công hay không?</p>]]></text></questiontext>
+    <answer fraction="100"><text><![CDATA[is_open()]]></text></answer>
+    <answer fraction="0"><text><![CDATA[check()]]></text></answer>
+    <answer fraction="0"><text><![CDATA[exists()]]></text></answer>
+    <answer fraction="0"><text><![CDATA[opened()]]></text></answer>
+    <tags><tag><text>file_handling</text></tag></tags>
+  </question>
+</quiz>

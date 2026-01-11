@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="multichoice">
+    <name><text>Phan 9 - Cau 1: Khai niem struct</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Từ khóa <code>struct</code> trong C++ được dùng để làm gì?</p>]]></text></questiontext>
+    <answer fraction="100"><text><![CDATA[Định nghĩa một kiểu dữ liệu mới gồm nhiều thành phần khác nhau]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Khai báo một hằng số]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Tạo một vòng lặp]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Xóa một biến khỏi bộ nhớ]]></text></answer>
+    <tags><tag><text>struct</text></tag><tag><text>user_defined_types</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 9 - Cau 2: Toan tu dau cham</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Để truy cập vào một thành phần (member) của struct, ta sử dụng toán tử nào?</p>]]></text></questiontext>
+    <answer fraction="0"><text><![CDATA[->]]></text></answer>
+    <answer fraction="100"><text><![CDATA[. (dấu chấm)]]></text></answer>
+    <answer fraction="0"><text><![CDATA[::]]></text></answer>
+    <answer fraction="0"><text><![CDATA[#]]></text></answer>
+    <tags><tag><text>struct</text></tag><tag><text>syntax</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 9 - Cau 3: Khai bao bien</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Giả sử đã định nghĩa <code>struct ToaDo { int x, y; };</code>, cách khai báo biến nào sau đây là đúng?</p>]]></text></questiontext>
+    <answer fraction="100"><text><![CDATA[ToaDo p1;]]></text></answer>
+    <answer fraction="0"><text><![CDATA[struct x, y;]]></text></answer>
+    <answer fraction="0"><text><![CDATA[int ToaDo p1;]]></text></answer>
+    <answer fraction="0"><text><![CDATA[new ToaDo p1;]]></text></answer>
+    <tags><tag><text>struct</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 9 - Cau 4: Mang struct</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Lệnh <code>SinhVien ds[50];</code> thực hiện công việc gì?</p>]]></text></questiontext>
+    <answer fraction="100"><text><![CDATA[Khai báo một mảng chứa 50 đối tượng kiểu SinhVien]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Khai báo một biến SinhVien có giá trị 50]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Xóa 50 bản ghi SinhVien]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Lỗi biên dịch]]></text></answer>
+    <tags><tag><text>struct</text></tag><tag><text>arrays</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 9 - Cau 5: Struct long nhau</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Một <code>struct</code> có thể chứa một <code>struct</code> khác bên trong nó hay không?</p>]]></text></questiontext>
+    <answer fraction="100"><text><![CDATA[Có, đây gọi là struct lồng nhau (Nested struct)]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Không bao giờ]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Chỉ khi chúng cùng tên]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Chỉ trong lập trình hướng đối tượng]]></text></answer>
+    <tags><tag><text>struct</text></tag><tag><text>nested_logic</text></tag></tags>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Phan 9 - Cau 6: Bo nho struct</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Kích thước bộ nhớ của một biến struct được tính như thế nào?</p>]]></text></questiontext>
+    <answer fraction="100"><text><![CDATA[Thường bằng tổng kích thước các thành phần bên trong (có thể cộng thêm bộ đệm padding)]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Luôn luôn là 4 byte]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Bằng kích thước thành phần lớn nhất]]></text></answer>
+    <answer fraction="0"><text><![CDATA[Bằng 0 byte]]></text></answer>
+    <tags><tag><text>struct</text></tag><tag><text>memory</text></tag></tags>
+  </question>
+</quiz>
