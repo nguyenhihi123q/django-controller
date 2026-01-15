@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hệ thống Gợi ý học tập</title>
+    <title>Hệ thống Gợi ý học tập - Danh sách</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hover-row:hover { background-color: #f2f2f2; cursor: pointer; }
+    </style>
 </head>
 <body class="bg-light">
     <div class="container mt-5">
-        <div class="card shadow">
-            <div class="card-header bg-primary text-white text-center">
-                <h2>DANH SÁCH SINH VIÊN TỪ MOODLE (API)</h2>
+        <div class="card shadow border-0">
+            <div class="card-header bg-primary text-white py-3">
+                <h2 class="mb-0 text-center">🎓 DANH SÁCH SINH VIÊN HỆ THỐNG</h2>
             </div>
             <div class="card-body">
-                <table class="table table-hover table-bordered text-center">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>STT</th>
-                            <th>Mã Sinh Viên</th>
-                            <th>Họ và Tên</th>
-                            <th>Email</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for sv in students %}
-                        <tr>
-                            <td>{{ forloop.counter }}</td>
-                            <td>{{ sv.username }}</td>
-                            <td>{{ sv.fullname }}</td>
-                            <td>{{ sv.email }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>STT</th>
+                                <th>Mã Sinh Viên</th>
+                                <th>Họ và Tên</th>
+                                <th>Email</th>
+                                <th class="text-center">Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for sv in students %}
+                            <tr class="hover-row">
+                                <td>{{ forloop.counter }}</td>
+                                <td class="fw-bold">{{ sv.username }}</td>
+                                <td>{{ sv.fullname }}</td>
+                                <td class="text-muted">{{ sv.email }}</td>
+                                <td class="text-center">
+                                    <a href="{% url 'student_detail' sv.id %}" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                                        🔍 Xem phân tích
+                                    </a>
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="5" class="text-center text-muted py-4">
+                                    Không tìm thấy dữ liệu sinh viên. Vui lòng kiểm tra API Moodle.
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

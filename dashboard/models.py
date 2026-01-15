@@ -26,3 +26,14 @@ class SystemConfig(models.Model):
 
     def __str__(self):
         return f"Cấu hình hệ thống (Alpha={self.hybrid_alpha})"
+    
+
+class StudentBehavior(models.Model):
+    student_id = models.IntegerField(verbose_name="ID Sinh viên")
+    moodle_quiz_id = models.IntegerField(verbose_name="ID bài học")
+    action_type = models.CharField(max_length=50, verbose_name="Hành động") # Ví dụ: 'view', 'click'
+    time_spent = models.IntegerField(default=0, verbose_name="Thời gian học (giây)")
+    timestamp = models.DateTimeField(auto_now_add=True, verbose_name="Thời điểm")
+
+    def __str__(self):
+        return f"SV {self.student_id} - {self.action_type} bài {self.moodle_quiz_id}"

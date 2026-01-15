@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phân tích Sinh viên {{ student_id }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --primary-gradient: linear-gradient(45deg, #1e3c72, #2a5298); }
+        .card { border-radius: 15px; border: none; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .bg-gradient-primary { background: var(--primary-gradient); }
+        .progress { border-radius: 10px; background-color: #f0f0f0; }
+        .action-log { border-left: 4px solid #198754; background-color: #f8fff9; }
+        .btn-control { padding: 0.25rem 0.75rem; font-size: 0.8rem; border-radius: 20px; width: 100px; }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container mt-4 mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <a href="/" class="btn btn-outline-secondary btn-sm shadow-sm">← Quay lại danh sách</a>
+            <h4 class="text-primary mb-0 fw-bold">Hệ Thống Điều Khiển Sinh Viên #{{ student_id }}</h4>
+        </div>
+
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert {% if message.tags == 'warning' %}alert-warning{% else %}alert-success{% endif %} alert-dismissible fade show shadow-sm mb-4" role="alert">
+                    <strong>Thông báo:</strong> {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        {% if actions_taken %}
+        <div class="card action-log shadow-sm mb-4">
+            <div class="card-body d-flex align-items-center">
+                <div class="fs-2 me-3">🚀</div>
+                <div>
+                    <h6 class="mb-1 fw-bold text-success">Hệ thống vừa tác động tự động:</h6>
+                    <ul class="mb-0 small">
+                        {% for action in actions_taken %}
+                            <li class="text-dark">{{ action }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="card shadow mb-4 border-0">
+            <div class="card-header bg-dark text-white py-3">
+                <h5 class="mb-0">🛠️ Quản lý lộ trình thủ công (Override)</h5>
+            </div>
+            <div class="card-body p-0">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr class="small text-uppercase">
+                            <th class="ps-4">Phần học</th>
+                            <th class="text-center">Trạng thái</th>
+                            <th class="text-center">Thao tác Giáo viên</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for section in sections %}
+                        <tr>
+                            <td class="ps-4">
+                                <span class="fw-bold">{{ section.name }}</span>
+                            </td>
+                            <td class="text-center">
+                                {% if section.group_id in manual_locks %}
+                                    <span class="badge bg-danger">ĐANG KHÓA THỦ CÔNG</span>
+                                {% else %}
+                                    <span class="badge bg-success">TỰ ĐỘNG / ĐANG MỞ</span>
+                                {% endif %}
+                            </td>
+                            <td class="text-center">
+                                <div class="d-flex justify-content-center gap-2">
+                                    <form action="{% url 'manual_control' student_id section.group_id 'unlock' %}" method="POST">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-outline-success btn-control">🔓 Mở</button>
+                                    </form>
+                                    <form action="{% url 'manual_control' student_id section.group_id 'lock' %}" method="POST">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-outline-danger btn-control">🔒 Khóa</button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        </div>
+</body>
+</html>
