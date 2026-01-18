@@ -1,0 +1,678 @@
+=== BẢN XUẤT NGÂN HÀNG CÂU HỎI - TỔNG CỘNG 78 CÂU ===
+
+Câu 1: Phan 1 - Cau 1: Ky tu ket thuc cau lenh
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức
+Nội dung: Trong C++, mọi câu lệnh đơn thường kết thúc bằng ký tự nào sau đây?
+Các lựa chọn:
+  - [SAI] :
+  - [SAI] .
+  - [ĐÚNG] ;
+  - [SAI] ,
+--------------------------------------------------
+Câu 2: Phan 1 - Cau 2: Thu vien iostream
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức
+Nội dung: Để sử dụng lệnh xuất dữ liệu (std::cout), bạn bắt buộc phải khai báo thư viện nào ở đầu chương trình?
+Các lựa chọn:
+  - [SAI] cmath
+  - [ĐÚNG] iostream
+  - [SAI] string
+  - [SAI] fstream
+--------------------------------------------------
+Câu 3: Phan 1 - Cau 3: Ghi chu nhieu dong
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức
+Nội dung: Cú pháp nào sau đây được dùng để viết ghi chú (comment) trên <b>nhiều dòng</b>?
+Các lựa chọn:
+  - [SAI] // ...
+  - [ĐÚNG] /* ... */
+  - [SAI] # ...
+  - [SAI] <!-- ... -->
+--------------------------------------------------
+Câu 4: Phan 1 - Cau 4: Kieu du lieu char
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức
+Nội dung: Kiểu dữ liệu nào sau đây dùng để lưu trữ một ký tự duy nhất (ví dụ: 'A', 'b') và tốn ít bộ nhớ nhất?
+Các lựa chọn:
+  - [SAI] int
+  - [SAI] double
+  - [ĐÚNG] char
+  - [SAI] string
+--------------------------------------------------
+Câu 5: Phan 1 - Cau 5: Logic hang so
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức
+Nội dung: Nếu bạn khai báo <code>const int MAX = 100;</code>, hành động nào sau đây sẽ bị trình biên dịch báo lỗi?
+Các lựa chọn:
+  - [SAI] Sử dụng MAX trong phép tính
+  - [ĐÚNG] Gán giá trị mới: MAX = 200;
+  - [SAI] In giá trị MAX ra màn hình
+  - [SAI] Khai báo một biến khác bằng MAX
+--------------------------------------------------
+Câu 6: Phan 1 - Cau 6: Dat ten bien hop le
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức
+Nội dung: Trong các tên biến sau, tên nào là <b>hợp lệ</b> theo quy tắc đặt tên của C++?
+Các lựa chọn:
+  - [SAI] 2nd_value
+  - [SAI] first name
+  - [ĐÚNG] _totalValue
+  - [SAI] int
+--------------------------------------------------
+Câu 7: Phan 9 - Cau 1: Khai niem struct
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 1
+Nội dung: Từ khóa <code>struct</code> trong C++ được dùng để làm gì?
+Các lựa chọn:
+  - [ĐÚNG] Định nghĩa một kiểu dữ liệu mới gồm nhiều thành phần khác nhau
+  - [SAI] Khai báo một hằng số
+  - [SAI] Tạo một vòng lặp
+  - [SAI] Xóa một biến khỏi bộ nhớ
+--------------------------------------------------
+Câu 8: Phan 9 - Cau 2: Toan tu dau cham
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 1
+Nội dung: Để truy cập vào một thành phần (member) của struct, ta sử dụng toán tử nào?
+Các lựa chọn:
+  - [SAI] ->
+  - [ĐÚNG] . (dấu chấm)
+  - [SAI] ::
+  - [SAI] #
+--------------------------------------------------
+Câu 9: Phan 9 - Cau 3: Khai bao bien
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 1
+Nội dung: Giả sử đã định nghĩa <code>struct ToaDo { int x, y; };</code>, cách khai báo biến nào sau đây là đúng?
+Các lựa chọn:
+  - [ĐÚNG] ToaDo p1;
+  - [SAI] struct x, y;
+  - [SAI] int ToaDo p1;
+  - [SAI] new ToaDo p1;
+--------------------------------------------------
+Câu 10: Phan 9 - Cau 4: Mang struct
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 1
+Nội dung: Lệnh <code>SinhVien ds[50];</code> thực hiện công việc gì?
+Các lựa chọn:
+  - [ĐÚNG] Khai báo một mảng chứa 50 đối tượng kiểu SinhVien
+  - [SAI] Khai báo một biến SinhVien có giá trị 50
+  - [SAI] Xóa 50 bản ghi SinhVien
+  - [SAI] Lỗi biên dịch
+--------------------------------------------------
+Câu 11: Phan 9 - Cau 5: Struct long nhau
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 1
+Nội dung: Một <code>struct</code> có thể chứa một <code>struct</code> khác bên trong nó hay không?
+Các lựa chọn:
+  - [ĐÚNG] Có, đây gọi là struct lồng nhau (Nested struct)
+  - [SAI] Không bao giờ
+  - [SAI] Chỉ khi chúng cùng tên
+  - [SAI] Chỉ trong lập trình hướng đối tượng
+--------------------------------------------------
+Câu 12: Phan 9 - Cau 6: Bo nho struct
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 1
+Nội dung: Kích thước bộ nhớ của một biến struct được tính như thế nào?
+Các lựa chọn:
+  - [ĐÚNG] Thường bằng tổng kích thước các thành phần bên trong (có thể cộng thêm bộ đệm padding)
+  - [SAI] Luôn luôn là 4 byte
+  - [SAI] Bằng kích thước thành phần lớn nhất
+  - [SAI] Bằng 0 byte
+--------------------------------------------------
+Câu 13: Phan 10 - Cau 1: Thu vien tap tin
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 10
+Nội dung: Thư viện nào trong C++ cung cấp các chức năng để làm việc với tệp tin (đọc/ghi)?
+Các lựa chọn:
+  - [SAI] iostream
+  - [ĐÚNG] fstream
+  - [SAI] stdio.h
+  - [SAI] conio.h
+--------------------------------------------------
+Câu 14: Phan 10 - Cau 2: Lop ghi file
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 10
+Nội dung: Lớp nào được sử dụng chuyên biệt để <b>ghi dữ liệu</b> từ chương trình vào tệp tin?
+Các lựa chọn:
+  - [ĐÚNG] ofstream
+  - [SAI] ifstream
+  - [SAI] iostream
+  - [SAI] string
+--------------------------------------------------
+Câu 15: Phan 10 - Cau 3: Lop doc file
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 10
+Nội dung: Để <b>đọc dữ liệu</b> từ một tệp tin có sẵn vào chương trình, ta sử dụng lớp nào?
+Các lựa chọn:
+  - [SAI] ofstream
+  - [ĐÚNG] ifstream
+  - [SAI] cin
+  - [SAI] file_read
+--------------------------------------------------
+Câu 16: Phan 10 - Cau 4: Dong file
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 10
+Nội dung: Sau khi hoàn thành thao tác với tệp tin, hàm nào cần được gọi để giải phóng tài nguyên?
+Các lựa chọn:
+  - [ĐÚNG] close()
+  - [SAI] exit()
+  - [SAI] stop()
+  - [SAI] delete()
+--------------------------------------------------
+Câu 17: Phan 10 - Cau 5: Ghi noi duoi
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 10
+Nội dung: Để ghi thêm dữ liệu vào cuối tệp mà <b>không làm mất dữ liệu cũ</b>, ta dùng chế độ nào?
+Các lựa chọn:
+  - [SAI] ios::out
+  - [ĐÚNG] ios::app
+  - [SAI] ios::in
+  - [SAI] ios::trunc
+--------------------------------------------------
+Câu 18: Phan 10 - Cau 6: Kiem tra file
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 10
+Nội dung: Hàm nào dùng để kiểm tra xem việc mở tệp tin có thành công hay không?
+Các lựa chọn:
+  - [ĐÚNG] is_open()
+  - [SAI] check()
+  - [SAI] exists()
+  - [SAI] opened()
+--------------------------------------------------
+Câu 19: Phan 2 - Cau 1: Kieu du lieu so thuc
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 2
+Nội dung: Để lưu trữ số Pi (3.14159) với độ chính xác cao, kiểu dữ liệu nào sau đây là tối ưu nhất?
+Các lựa chọn:
+  - [SAI] int
+  - [SAI] bool
+  - [ĐÚNG] double
+  - [SAI] char
+--------------------------------------------------
+Câu 20: Phan 2 - Cau 2: Phep toan modulo
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 2
+Nội dung: Kết quả của phép toán <code>10 % 3</code> trong C++ là bao nhiêu?
+Các lựa chọn:
+  - [SAI] 3
+  - [ĐÚNG] 1
+  - [SAI] 0
+  - [SAI] 3.33
+--------------------------------------------------
+Câu 21: Phan 2 - Cau 3: Khai bao const
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 2
+Nội dung: Từ khóa nào được dùng để khai báo một biến mà giá trị của nó không thể thay đổi trong suốt chương trình?
+Các lựa chọn:
+  - [ĐÚNG] const
+  - [SAI] static
+  - [SAI] final
+  - [SAI] immutable
+--------------------------------------------------
+Câu 22: Phan 2 - Cau 4: Bo nho char
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 2
+Nội dung: Kiểu dữ liệu <code>char</code> thường chiếm bao nhiêu byte trong bộ nhớ?
+Các lựa chọn:
+  - [ĐÚNG] 1 byte
+  - [SAI] 2 bytes
+  - [SAI] 4 bytes
+  - [SAI] 8 bytes
+--------------------------------------------------
+Câu 23: Phan 2 - Cau 5: Comment don
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 2
+Nội dung: Ký hiệu nào dùng để tạo ghi chú trên một dòng duy nhất?
+Các lựa chọn:
+  - [SAI] /*
+  - [ĐÚNG] //
+  - [SAI] #
+  - [SAI] --
+--------------------------------------------------
+Câu 24: Phan 2 - Cau 6: Ep kieu
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 2
+Nội dung: Khi thực hiện phép chia <code>5 / 2</code> giữa hai số nguyên, kết quả nhận được là:
+Các lựa chọn:
+  - [ĐÚNG] 2
+  - [SAI] 2.5
+  - [SAI] 3
+  - [SAI] Lỗi biên dịch
+--------------------------------------------------
+Câu 25: Phan 3 - Cau 1: Cu phap if-else
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 3
+Nội dung: Trong C++, cấu trúc nào dùng để thực hiện một khối lệnh khi điều kiện sai?
+Các lựa chọn:
+  - [SAI] if
+  - [ĐÚNG] else
+  - [SAI] then
+  - [SAI] switch
+--------------------------------------------------
+Câu 26: Phan 3 - Cau 2: Toan tu so sanh bang
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 3
+Nội dung: Toán tử nào dùng để so sánh xem hai giá trị có <b>bằng nhau</b> hay không?
+Các lựa chọn:
+  - [SAI] =
+  - [ĐÚNG] ==
+  - [SAI] ===
+  - [SAI] !=
+--------------------------------------------------
+Câu 27: Phan 3 - Cau 3: Tu khoa break
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 3
+Nội dung: Trong cấu trúc <code>switch-case</code>, từ khóa nào dùng để ngăn chương trình tự động chạy xuống các case tiếp theo?
+Các lựa chọn:
+  - [ĐÚNG] break
+  - [SAI] stop
+  - [SAI] exit
+  - [SAI] default
+--------------------------------------------------
+Câu 28: Phan 3 - Cau 4: Toan tu AND
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 3
+Nội dung: Biểu thức <code>(5 > 3 && 2 < 1)</code> trả về giá trị nào?
+Các lựa chọn:
+  - [SAI] true
+  - [ĐÚNG] false
+  - [SAI] 1
+  - [SAI] Lỗi cú pháp
+--------------------------------------------------
+Câu 29: Phan 3 - Cau 5: Mac dinh switch
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 3
+Nội dung: Trong <code>switch</code>, phần nào sẽ được thực hiện nếu không có <code>case</code> nào khớp với giá trị của biến?
+Các lựa chọn:
+  - [SAI] else
+  - [ĐÚNG] default
+  - [SAI] break
+  - [SAI] catch
+--------------------------------------------------
+Câu 30: Phan 3 - Cau 6: If long nhau
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức phần 3
+Nội dung: Cấu trúc một lệnh <code>if</code> nằm bên trong một lệnh <code>if</code> khác được gọi là gì?
+Các lựa chọn:
+  - [ĐÚNG] Nested if (if lồng nhau)
+  - [SAI] Double if
+  - [SAI] Multi if
+  - [SAI] Loop if
+--------------------------------------------------
+Câu 31: Phan 4 - Cau 1: Cau truc for
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 4
+Nội dung: Trong vòng lặp <code>for (int i = 0; i < 10; i++)</code>, biến <b>i++</b> đóng vai trò gì?
+Các lựa chọn:
+  - [SAI] Khởi tạo biến
+  - [SAI] Điều kiện dừng
+  - [ĐÚNG] Bước nhảy (cập nhật biến)
+  - [SAI] Thân vòng lặp
+--------------------------------------------------
+Câu 32: Phan 4 - Cau 2: Do-while dac diem
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 4
+Nội dung: Vòng lặp nào sau đây luôn thực hiện khối lệnh <b>ít nhất một lần</b> kể cả khi điều kiện sai ngay từ đầu?
+Các lựa chọn:
+  - [SAI] for
+  - [SAI] while
+  - [ĐÚNG] do-while
+  - [SAI] if-else
+--------------------------------------------------
+Câu 33: Phan 4 - Cau 3: Lenh break
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 4
+Nội dung: Lệnh nào dùng để thoát khỏi vòng lặp ngay lập tức dù điều kiện lặp vẫn còn đúng?
+Các lựa chọn:
+  - [ĐÚNG] break
+  - [SAI] continue
+  - [SAI] return
+  - [SAI] exit
+--------------------------------------------------
+Câu 34: Phan 4 - Cau 4: Lenh continue
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 4
+Nội dung: Trong vòng lặp, lệnh <code>continue</code> có tác dụng gì?
+Các lựa chọn:
+  - [SAI] Dừng vòng lặp vĩnh viễn
+  - [ĐÚNG] Bỏ qua các lệnh còn lại của lần lặp hiện tại và sang lần lặp mới
+  - [SAI] Kết thúc chương trình
+  - [SAI] Quay lại bước khởi tạo
+--------------------------------------------------
+Câu 35: Phan 4 - Cau 5: Vong lap vo tan
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 4
+Nội dung: Lỗi nào thường dẫn đến một vòng lặp vô tận (infinite loop)?
+Các lựa chọn:
+  - [ĐÚNG] Điều kiện dừng không bao giờ sai
+  - [SAI] Sử dụng sai kiểu dữ liệu
+  - [SAI] Thiếu thư viện iostream
+  - [SAI] Sử dụng lệnh break
+--------------------------------------------------
+Câu 36: Phan 4 - Cau 6: Logic while
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 4
+Nội dung: Vòng lặp <code>while (condition)</code> sẽ thực hiện khi nào?
+Các lựa chọn:
+  - [ĐÚNG] Khi condition có giá trị true (khác 0)
+  - [SAI] Khi condition có giá trị false (bằng 0)
+  - [SAI] Chỉ khi condition bằng 1
+  - [SAI] Luôn luôn thực hiện
+--------------------------------------------------
+Câu 37: Phan 5 - Cau 1: Chi so dau tien
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 5
+Nội dung: Trong C++, chỉ số (index) của phần tử đầu tiên trong một mảng luôn luôn là bao nhiêu?
+Các lựa chọn:
+  - [ĐÚNG] 0
+  - [SAI] 1
+  - [SAI] -1
+  - [SAI] Tùy vào cách khai báo
+--------------------------------------------------
+Câu 38: Phan 5 - Cau 2: Khai bao mang dung
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 5
+Nội dung: Cách khai báo mảng số nguyên nào sau đây là <b>đúng</b> cú pháp?
+Các lựa chọn:
+  - [ĐÚNG] int arr[10];
+  - [SAI] int arr(10);
+  - [SAI] arr{10} int;
+  - [SAI] int arr[]; (không khởi tạo)
+--------------------------------------------------
+Câu 39: Phan 5 - Cau 3: Phan tu cuoi cung
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 5
+Nội dung: Nếu mảng được khai báo là <code>float b[5];</code>, phần tử cuối cùng của mảng là:
+Các lựa chọn:
+  - [SAI] b[5]
+  - [ĐÚNG] b[4]
+  - [SAI] b[0]
+  - [SAI] b[6]
+--------------------------------------------------
+Câu 40: Phan 5 - Cau 4: Truy cap mang 2 chieu
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 5
+Nội dung: Để truy cập phần tử ở hàng 2, cột 3 của mảng 2 chiều <code>int matrix[5][5];</code>, ta dùng cú pháp:
+Các lựa chọn:
+  - [SAI] matrix[2,3]
+  - [ĐÚNG] matrix[1][2]
+  - [SAI] matrix[2][3]
+  - [SAI] matrix{2}{3}
+--------------------------------------------------
+Câu 41: Phan 5 - Cau 5: Loi out of bounds
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 5
+Nội dung: Việc truy cập vào <code>a[10]</code> của một mảng <code>int a[10];</code> sẽ dẫn đến kết quả gì?
+Các lựa chọn:
+  - [ĐÚNG] Lỗi truy cập vùng nhớ không xác định (Out of bounds)
+  - [SAI] Lấy được giá trị cuối cùng
+  - [SAI] Giá trị mặc định là 0
+  - [SAI] Chương trình vẫn chạy đúng 100%
+--------------------------------------------------
+Câu 42: Phan 5 - Cau 6: Mang va Vong lap
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 5
+Nội dung: Vòng lặp nào thường được dùng phổ biến nhất để duyệt qua các phần tử của mảng?
+Các lựa chọn:
+  - [ĐÚNG] vòng lặp for
+  - [SAI] vòng lặp do-while
+  - [SAI] cấu trúc switch-case
+  - [SAI] vòng lặp while
+--------------------------------------------------
+Câu 43: Phan 6 - Cau 1: Muc dich cua ham
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 6
+Nội dung: Lợi ích lớn nhất của việc sử dụng hàm trong lập trình là gì?
+Các lựa chọn:
+  - [ĐÚNG] Tái sử dụng mã nguồn và dễ quản lý chương trình
+  - [SAI] Làm chương trình chạy chậm hơn
+  - [SAI] Tăng dung lượng file mã nguồn
+  - [SAI] Bắt buộc phải có để chạy được code
+--------------------------------------------------
+Câu 44: Phan 6 - Cau 2: Kieu void
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 6
+Nội dung: Khi một hàm không cần trả về bất kỳ giá trị nào cho nơi gọi nó, ta dùng kiểu dữ liệu nào làm kiểu trả về?
+Các lựa chọn:
+  - [SAI] int
+  - [ĐÚNG] void
+  - [SAI] null
+  - [SAI] none
+--------------------------------------------------
+Câu 45: Phan 6 - Cau 3: Lenh return
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 6
+Nội dung: Lệnh <code>return</code> trong một hàm có tác dụng gì?
+Các lựa chọn:
+  - [ĐÚNG] Kết thúc hàm và trả về một giá trị cho nơi gọi
+  - [SAI] Nhập dữ liệu từ bàn phím
+  - [SAI] In kết quả ra màn hình
+  - [SAI] Khai báo biến mới
+--------------------------------------------------
+Câu 46: Phan 6 - Cau 4: Bien cuc bo
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 6
+Nội dung: Biến được khai báo bên trong một hàm thì được gọi là gì?
+Các lựa chọn:
+  - [SAI] Biến toàn cục (Global variable)
+  - [ĐÚNG] Biến cục bộ (Local variable)
+  - [SAI] Hằng số (Constant)
+  - [SAI] Biến thành viên
+--------------------------------------------------
+Câu 47: Phan 6 - Cau 5: Tham so ham
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 6
+Nội dung: Trong khai báo <code>int tinhTong(int a, int b)</code>, <b>a</b> và <b>b</b> được gọi là gì?
+Các lựa chọn:
+  - [ĐÚNG] Tham số (Parameters)
+  - [SAI] Giá trị trả về
+  - [SAI] Tên hàm
+  - [SAI] Thân hàm
+--------------------------------------------------
+Câu 48: Phan 6 - Cau 6: Loi goi ham
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 6
+Nội dung: Để thực hiện một hàm đã được định nghĩa, ta cần làm gì trong hàm <code>main()</code>?
+Các lựa chọn:
+  - [ĐÚNG] Gọi tên hàm kèm theo các đối số cần thiết
+  - [SAI] Khai báo lại hàm đó một lần nữa
+  - [SAI] Không cần làm gì cả
+  - [SAI] Xóa hàm main đi
+--------------------------------------------------
+Câu 49: Phan 7 - Cau 1: Dinh nghia con tro
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 7
+Nội dung: Biến con trỏ trong C++ dùng để lưu trữ loại giá trị nào?
+Các lựa chọn:
+  - [SAI] Giá trị số nguyên
+  - [ĐÚNG] Địa chỉ của một biến khác trong bộ nhớ
+  - [SAI] Một chuỗi ký tự
+  - [SAI] Giá trị đúng/sai (bool)
+--------------------------------------------------
+Câu 50: Phan 7 - Cau 2: Toan tu lay dia chi
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 7
+Nội dung: Toán tử nào dùng để lấy địa chỉ bộ nhớ của một biến?
+Các lựa chọn:
+  - [ĐÚNG] & (ampersand)
+  - [SAI] *
+  - [SAI] %
+  - [SAI] #
+--------------------------------------------------
+Câu 51: Phan 7 - Cau 3: Khai bao con tro
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 7
+Nội dung: Cách khai báo một con trỏ kiểu số nguyên nào sau đây là <b>đúng</b>?
+Các lựa chọn:
+  - [SAI] int p*;
+  - [ĐÚNG] int *p;
+  - [SAI] pointer int p;
+  - [SAI] int &p;
+--------------------------------------------------
+Câu 52: Phan 7 - Cau 4: Giai tham chieu
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 7
+Nội dung: Nếu <code>p</code> là một con trỏ, biểu thức <code>*p</code> dùng để làm gì?
+Các lựa chọn:
+  - [ĐÚNG] Lấy giá trị của biến tại địa chỉ mà p đang trỏ tới
+  - [SAI] Lấy địa chỉ của p
+  - [SAI] Tăng giá trị địa chỉ của p
+  - [SAI] Xóa con trỏ p
+--------------------------------------------------
+Câu 53: Phan 7 - Cau 5: Con tro NULL
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 7
+Nội dung: Tại sao nên gán giá trị <code>NULL</code> hoặc <code>nullptr</code> cho con trỏ khi mới khai báo mà chưa trỏ vào đâu?
+Các lựa chọn:
+  - [ĐÚNG] Để tránh con trỏ trỏ vào vùng nhớ rác gây lỗi hệ thống
+  - [SAI] Để tiết kiệm bộ nhớ RAM
+  - [SAI] Để chương trình chạy nhanh hơn
+  - [SAI] Bắt buộc phải làm vậy mới biên dịch được
+--------------------------------------------------
+Câu 54: Phan 7 - Cau 6: Kich thuoc con tro
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 7
+Nội dung: Kích thước của một biến con trỏ phụ thuộc vào yếu tố nào?
+Các lựa chọn:
+  - [ĐÚNG] Kiến trúc hệ điều hành (32-bit hoặc 64-bit)
+  - [SAI] Kiểu dữ liệu mà nó trỏ tới (int, char, double...)
+  - [SAI] Giá trị của biến mà nó trỏ tới
+  - [SAI] Tên của con trỏ
+--------------------------------------------------
+Câu 55: Phan 8 - Cau 1: Thu vien string
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 8
+Nội dung: Để sử dụng kiểu dữ liệu <code>std::string</code> trong C++, bạn cần khai báo thư viện nào?
+Các lựa chọn:
+  - [SAI] iostream
+  - [ĐÚNG] string
+  - [SAI] cstring
+  - [SAI] stdio.h
+--------------------------------------------------
+Câu 56: Phan 8 - Cau 2: Nhap chuoi getline
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 8
+Nội dung: Hàm nào sau đây dùng để nhập một chuỗi ký tự <b>bao gồm cả khoảng trắng</b> từ bàn phím?
+Các lựa chọn:
+  - [SAI] cin >> s;
+  - [ĐÚNG] getline(cin, s);
+  - [SAI] gets(s);
+  - [SAI] scanf("%s", &s);
+--------------------------------------------------
+Câu 57: Phan 8 - Cau 3: Do dai chuoi
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 8
+Nội dung: Lệnh nào dùng để lấy số lượng ký tự có trong chuỗi <code>s</code>?
+Các lựa chọn:
+  - [ĐÚNG] s.length()
+  - [SAI] s.width()
+  - [SAI] s.count()
+  - [SAI] s.sizeof()
+--------------------------------------------------
+Câu 58: Phan 8 - Cau 4: Truy cap ky tu
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 8
+Nội dung: Tương tự mảng, ký tự thứ 3 của chuỗi <code>s</code> được truy cập bằng cú pháp nào?
+Các lựa chọn:
+  - [SAI] s[3]
+  - [ĐÚNG] s[2]
+  - [SAI] s(2)
+  - [SAI] s.at(3)
+--------------------------------------------------
+Câu 59: Phan 8 - Cau 5: Noi chuoi
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 8
+Nội dung: Trong C++, toán tử nào dùng để nối hai đối tượng <code>std::string</code> lại với nhau?
+Các lựa chọn:
+  - [ĐÚNG] +
+  - [SAI] &
+  - [SAI] *
+  - [SAI] concat()
+--------------------------------------------------
+Câu 60: Phan 8 - Cau 6: Cat chuoi con
+Danh mục: Mặc định cho Các câu hỏi củng cố kiến thức Phần 8
+Nội dung: Hàm <code>s.substr(1, 3)</code> sẽ làm gì?
+Các lựa chọn:
+  - [ĐÚNG] Trích xuất 3 ký tự bắt đầu từ vị trí chỉ số 1
+  - [SAI] Xóa 3 ký tự đầu tiên
+  - [SAI] Tìm vị trí của số 1 và 3
+  - [SAI] Cắt chuỗi từ vị trí 1 đến hết
+--------------------------------------------------
+Câu 61: C01_Operators
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Trong C++, giá trị của biểu thức 5 / 2 là bao nhiêu?
+Các lựa chọn:
+  - [ĐÚNG] 2
+  - [SAI] 2.5
+--------------------------------------------------
+Câu 62: C02_Loops
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Vòng lặp nào luôn thực hiện khối lệnh ít nhất một lần?
+Các lựa chọn:
+  - [ĐÚNG] do...while
+  - [SAI] while
+--------------------------------------------------
+Câu 63: C03_Pointers
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Ký hiệu nào dùng để lấy địa chỉ của một biến?
+Các lựa chọn:
+  - [ĐÚNG] &
+  - [SAI] *
+--------------------------------------------------
+Câu 64: C01_Operators
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Trong C++, giá trị của biểu thức 5 / 2 là bao nhiêu?
+Các lựa chọn:
+  - [ĐÚNG] 2
+  - [SAI] 2.5
+  - [SAI] 3
+--------------------------------------------------
+Câu 65: C02_IO_Stream
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Ký hiệu nào sau đây được dùng với "cin" để nhập dữ liệu từ bàn phím?
+Các lựa chọn:
+  - [ĐÚNG] >>
+  - [SAI] <<
+--------------------------------------------------
+Câu 66: C03_Logic
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Kết quả của biểu thức !(5 > 3 || 2 < 1) là?
+Các lựa chọn:
+  - [ĐÚNG] false (0)
+  - [SAI] true (1)
+--------------------------------------------------
+Câu 67: C04_Loops_Basic
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Vòng lặp nào luôn thực hiện khối lệnh ít nhất một lần trước khi kiểm tra điều kiện?
+Các lựa chọn:
+  - [ĐÚNG] do...while
+  - [SAI] while
+  - [SAI] for
+--------------------------------------------------
+Câu 68: C05_Control_Flow
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Lệnh nào dùng để thoát ra khỏi vòng lặp ngay lập tức?
+Các lựa chọn:
+  - [ĐÚNG] break
+  - [SAI] continue
+  - [SAI] return
+--------------------------------------------------
+Câu 69: C06_Arrays_Index
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Mảng int a[10]; có chỉ số (index) của phần tử cuối cùng là bao nhiêu?
+Các lựa chọn:
+  - [ĐÚNG] 9
+  - [SAI] 10
+  - [SAI] 0
+--------------------------------------------------
+Câu 70: C07_Pointers_Addr
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Ký hiệu nào dùng để lấy địa chỉ của một biến trong bộ nhớ?
+Các lựa chọn:
+  - [ĐÚNG] &
+  - [SAI] *
+  - [SAI] ->
+--------------------------------------------------
+Câu 71: C08_Pointers_Val
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Nếu int *p = &a; thì lệnh nào dùng để lấy giá trị của biến a thông qua p?
+Các lựa chọn:
+  - [ĐÚNG] *p
+  - [SAI] &p
+  - [SAI] p
+--------------------------------------------------
+Câu 72: C09_Strings
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Ký tự nào dùng để đánh dấu kết thúc một chuỗi trong C++?
+Các lựa chọn:
+  - [ĐÚNG] '\0'
+  - [SAI] '\n'
+  - [SAI] 'EOF'
+--------------------------------------------------
+Câu 73: C10_Functions
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Để thay đổi giá trị của biến truyền vào hàm sau khi hàm kết thúc, ta dùng cách truyền nào?
+Các lựa chọn:
+  - [ĐÚNG] Truyền tham chiếu (int &n)
+  - [SAI] Truyền tham trị (int n)
+--------------------------------------------------
+Câu 74: C11_Structs
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Để truy cập thành viên "age" của một đối tượng struct "Student s;", ta dùng cú pháp nào?
+Các lựa chọn:
+  - [ĐÚNG] s.age
+  - [SAI] s->age
+  - [SAI] s(age)
+--------------------------------------------------
+Câu 75: C12_Complexity
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Hai vòng lặp lồng nhau, mỗi vòng chạy 10 lần, thì tổng số lần thực hiện thân vòng lặp là?
+Các lựa chọn:
+  - [ĐÚNG] 100
+  - [SAI] 20
+  - [SAI] 10
+--------------------------------------------------
+Câu 76: C13_Consistency
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Cho "int a = 5; int b = a++;". Giá trị của b sau lệnh này là?
+Các lựa chọn:
+  - [ĐÚNG] 5
+  - [SAI] 6
+--------------------------------------------------
+Câu 77: C14_Files
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Thư viện nào dùng để thực hiện đọc và ghi File trong C++?
+Các lựa chọn:
+  - [ĐÚNG] fstream
+  - [SAI] iostream
+  - [SAI] conio.h
+--------------------------------------------------
+Câu 78: C15_Arrays_Loops
+Danh mục: Mặc định cho KIỂM TRA NĂNG LỰC ĐẦU VÀO
+Nội dung: Lệnh "int a[5] = {0};" sẽ khởi tạo các phần tử trong mảng như thế nào?
+Các lựa chọn:
+  - [ĐÚNG] Tất cả 5 phần tử đều bằng 0
+  - [SAI] Chỉ phần tử đầu tiên bằng 0
+--------------------------------------------------
