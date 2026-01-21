@@ -1,58 +1,81 @@
-import pymysql
+import mysql.connector
 
-# --- CẤU HÌNH DATABASE (Sếp chỉnh lại nếu cần) ---
-DB_CONFIG = {
+# ============================================================================
+# 👇 CẤU HÌNH DATABASE (Lấy chuẩn từ file config.php sếp gửi)
+# ============================================================================
+db_config = {
     'host': 'localhost',
+    'port': 3307,        # Port của sếp là 3307
     'user': 'root',
-    'password': '',
+    'password': '',      # Pass để trống
     'database': 'lophocdhs',
-    'port': 3307,
-    'charset': 'utf8mb4',
-    'cursorclass': pymysql.cursors.DictCursor
+    'raise_on_warnings': True
 }
 
-def export_lessons_to_python_list():
-    conn = None
+COURSE_ID = 3  # ID khóa học C++
+
+def scan_quizzes():
+    print(f"\n{'='*90}")
+    print(f"🚀 KẾT NỐI ĐẾN DATABASE: {db_config['database']} (Port: {db_config['port']})")
+    print(f"{'='*90}\n")
+
     try:
-        conn = pymysql.connect(**DB_CONFIG)
-        with conn.cursor() as cursor:
-            # 1. Truy vấn lấy CMID và Tên bài (Chỉ lấy resource kiểu 'page')
-            # Nếu bài học của sếp là URL hay Label, hãy đổi 'page' thành 'url' hoặc 'label'
-            query = """
-                SELECT cm.id AS cmid, p.name
-                FROM mdl_course_modules cm
-                JOIN mdl_modules m ON cm.module = m.id
-                JOIN mdl_page p ON cm.instance = p.id
-                JOIN mdl_course_sections s ON cm.section = s.id
-                WHERE cm.course = 3 AND m.name = 'page'
-                ORDER BY s.section ASC, cm.id ASC
-            """
-            cursor.execute(query)
-            lessons = cursor.fetchall()
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor(dictionary=True)
 
-            if not lessons:
-                print("# ❌ Không tìm thấy bài học nào (kiểm tra lại Course ID hoặc Module Type).")
-                return
+        # SQL: Lấy ID, Tên và đếm số slot (số câu hỏi) trong mỗi bài
+        sql = """
+            SELECT q.id, q.name, COUNT(qs.id) as so_cau_hoi
+            FROM mdl_quiz q
+            LEFT JOIN mdl_quiz_slots qs ON q.id = qs.quizid
+            WHERE q.course = %s
+            GROUP BY q.id, q.name
+            ORDER BY q.id ASC
+        """
 
-            # 2. IN RA MÀN HÌNH ĐÚNG ĐỊNH DẠNG PYTHON
-            print(f"# ✅ Tìm thấy {len(lessons)} bài học. Copy đoạn dưới đây vào file Python:\n")
-            print("lessons_list = [")
+        cursor.execute(sql, (COURSE_ID,))
+        results = cursor.fetchall()
 
-            for lesson in lessons:
-                # Tạo tên quiz theo cú pháp sếp muốn
-                quiz_name = f"bài test bài {lesson['name']}"
-                
-                # In ra dòng code Python (f-string)
-                # Lưu ý: cmid ở đây là after_cmid cho bài quiz
-                print(f'    {{"after_cmid": {lesson["cmid"]}, "name": "{quiz_name}"}},')
+        if not results:
+            print("❌ Không tìm thấy bài Quiz nào trong Course này!")
+            return
 
-            print("]")
-            print("\n# 🏁 Hết danh sách. Sếp copy toàn bộ đoạn trong ngoặc vuông nhé!")
+        # In tiêu đề bảng
+        print(f"{'ID':<6} | {'SL Câu':<8} | {'Trạng thái':<15} | {'Tên Bài Quiz'}")
+        print("-" * 90)
 
-    except Exception as e:
-        print(f"# ❌ Lỗi kết nối CSDL: {e}")
-    finally:
-        if conn: conn.close()
+        count_full = 0
+        count_empty = 0
+
+        for row in results:
+            q_id = row['id']
+            q_name = row['name']
+            count = row['so_cau_hoi']
+            
+            # Đánh giá trạng thái
+            if count == 0:
+                status = "🔴 TRỐNG (0)"
+                count_empty += 1
+            elif count >= 8:
+                status = "🟢 ĐÃ CÓ (8+)"
+                count_full += 1
+            else:
+                status = f"🟡 THIẾU ({count})"
+
+            # In ra màn hình
+            print(f"{q_id:<6} | {count:<8} | {status:<15} | {q_name}")
+
+        print("-" * 90)
+        print(f"📊 TỔNG KẾT:")
+        print(f"   - Đã nạp xong: {count_full} bài")
+        print(f"   - Chưa nạp (Trống): {count_empty} bài")
+        
+        cursor.close()
+        conn.close()
+
+    except mysql.connector.Error as err:
+        print(f"❌ Lỗi kết nối: {err}")
+        print("Sếp kiểm tra lại xem XAMPP MySQL đã bật chưa nhé?")
 
 if __name__ == "__main__":
-    export_lessons_to_python_list()
+    scan_quizzes()
