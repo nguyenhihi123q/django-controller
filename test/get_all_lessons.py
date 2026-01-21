@@ -1,6 +1,6 @@
 import pymysql
 
-# --- CẤU HÌNH DATABASE ---
+# --- CẤU HÌNH DATABASE (Sếp chỉnh lại nếu cần) ---
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'root',
@@ -11,15 +11,15 @@ DB_CONFIG = {
     'cursorclass': pymysql.cursors.DictCursor
 }
 
-def get_108_lessons():
+def export_lessons_to_python_list():
+    conn = None
     try:
         conn = pymysql.connect(**DB_CONFIG)
         with conn.cursor() as cursor:
-            print(f"{'='*10} DANH SÁCH 108 BÀI HỌC TRONG KHÓA HỌC {'='*10}\n")
-            
-            # Truy vấn lấy cmid (Course Module ID) và tên của tất cả các Page trong Course 3
+            # 1. Truy vấn lấy CMID và Tên bài (Chỉ lấy resource kiểu 'page')
+            # Nếu bài học của sếp là URL hay Label, hãy đổi 'page' thành 'url' hoặc 'label'
             query = """
-                SELECT cm.id AS cmid, p.id AS page_id, p.name, s.name AS section_name, s.id AS section_id
+                SELECT cm.id AS cmid, p.name
                 FROM mdl_course_modules cm
                 JOIN mdl_modules m ON cm.module = m.id
                 JOIN mdl_page p ON cm.instance = p.id
@@ -31,23 +31,28 @@ def get_108_lessons():
             lessons = cursor.fetchall()
 
             if not lessons:
-                print("❌ Không tìm thấy bài học (Page) nào. Hãy kiểm tra lại khóa học.")
+                print("# ❌ Không tìm thấy bài học nào (kiểm tra lại Course ID hoặc Module Type).")
                 return
 
-            print(f"{'STT':<5} | {'CMID':<8} | {'Tên bài học':<40} | {'Thuộc Section'}")
-            print("-" * 80)
+            # 2. IN RA MÀN HÌNH ĐÚNG ĐỊNH DẠNG PYTHON
+            print(f"# ✅ Tìm thấy {len(lessons)} bài học. Copy đoạn dưới đây vào file Python:\n")
+            print("lessons_list = [")
 
-            for index, lesson in enumerate(lessons, 1):
-                section_display = lesson['section_name'] if lesson['section_name'] else f"Section ID {lesson['section_id']}"
-                print(f"{index:<5} | {lesson['cmid']:<8} | {lesson['name'][:40]:<40} | {section_display}")
+            for lesson in lessons:
+                # Tạo tên quiz theo cú pháp sếp muốn
+                quiz_name = f"bài test bài {lesson['name']}"
+                
+                # In ra dòng code Python (f-string)
+                # Lưu ý: cmid ở đây là after_cmid cho bài quiz
+                print(f'    {{"after_cmid": {lesson["cmid"]}, "name": "{quiz_name}"}},')
 
-            print(f"\n✅ Tổng cộng tìm thấy: {len(lessons)} bài học.")
-            print("\n💡 Ghi chú: Hãy dùng CMID này để gắn bộ Quiz tương ứng sau mỗi bài.")
+            print("]")
+            print("\n# 🏁 Hết danh sách. Sếp copy toàn bộ đoạn trong ngoặc vuông nhé!")
 
     except Exception as e:
-        print(f"❌ Lỗi: {e}")
+        print(f"# ❌ Lỗi kết nối CSDL: {e}")
     finally:
         if conn: conn.close()
 
 if __name__ == "__main__":
-    get_108_lessons()
+    export_lessons_to_python_list()
